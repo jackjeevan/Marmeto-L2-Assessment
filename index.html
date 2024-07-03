@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Your code goes here -->
+    <div id="container" class="container">
+        <div class="product-images">
+            <div class="product-image">
+                <img id="mainImage" alt="Product Image">
+            </div>
+            <div class="thumbnails" id="thumbnails"></div>
+        </div>
+        <div class="product-details">
+            <p class="vendor" id="vendor"></p>
+            <h1 class="title" id="title"></h1>
+            <div>
+                <hr class="light-hr">
+            </div>
+            <div class="price">
+                <div class="price-current">
+                    <span class="current-price" id="price"></span>
+                    <span class="discount" id="discount"></span>
+                </div>
+                <span class="original-price" id="originalPrice"></span>
+            </div>
+            <div>
+                <hr class="light-hr">
+            </div>
+            <div class="selectors">
+                <div class="color-selector">
+                    <label>Choose a Color</label>
+                    <div id="colorOptions" class="color-options"></div>
+                </div>
+                <div>
+                    <hr class="light-hr">
+                </div>
+                <div class="size-selector">
+                    <label for="size">Choose a Size</label>
+                    <div id="sizeOptions" class="size-options"></div>
+                </div>
+                <div class="quantity-addtocart">
+                    <div class="quantity-selector">
+                        <div class="quantity-buttons">
+                            <button id="decreaseQuantity">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button id="increaseQuantity">+</button>
+                        </div>
+                    </div>
+                    <button id="addToCartBtn"><i class="fas fa-shopping-bag"></i> Add To Cart</button>
+                </div>
+            </div>
+            <p class="confirmation-message" id="confirmationMessage"></p>
+            <div>
+                <hr class="light-hr">
+            </div>
+            <div class="description" id="description"></div>
+        </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="script.js"></script>
+</body>
+</html>
