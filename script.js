@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             let selectedSize = '';
 
             const fallbackImages = [
-                './images/default1.jpeg',
-                './images/default2.jpeg',
-                './images/default3.jpeg',
-                './images/default4.jpeg'
+                './images/default1.jpg',
+                './images/default2.jpg',
+                './images/default3.jpg',
+                './images/default4.jpg'
             ];
             const formatPrice = price => {
                 return parseFloat(price.replace('$', '')).toFixed(2);
